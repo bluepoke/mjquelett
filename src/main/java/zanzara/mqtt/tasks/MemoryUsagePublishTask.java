@@ -1,4 +1,4 @@
-package zanzara.mqtt;
+package zanzara.mqtt.tasks;
 
 import org.eclipse.paho.client.mqttv3.MqttClient;
 

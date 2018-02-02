@@ -1,4 +1,4 @@
-package zanzara.mqtt;
+package zanzara.mqtt.tasks;
 
 import java.util.Timer;
 import java.util.TimerTask;
