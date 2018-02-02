@@ -14,7 +14,7 @@ public class CpuInfo {
 		CentralProcessor processor = hw.getProcessor();
 		double load = processor.getSystemCpuLoad();
 				
-		cpuUsage = String.format("%3.1f%%", load);
+		cpuUsage = String.format("%3.1f%%", load*100.0);
 		
 		return cpuUsage;
 	}
