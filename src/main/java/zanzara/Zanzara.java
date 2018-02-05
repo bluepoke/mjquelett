@@ -1,4 +1,4 @@
-package zanzara.mqtt.client;
+package zanzara;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -16,9 +16,12 @@ import zanzara.mqtt.tasks.CpuUsagePublishJob;
 import zanzara.mqtt.tasks.MemoryUsagePublishJob;
 
 @Slf4j
-public class PublishClient {
-
+public class Zanzara {
+	
 	public static void main(String[] args) throws FileNotFoundException, MqttException, IOException, InterruptedException {
+		
+		System.out.println(Logo.getLogo());
+		System.out.println();
 		
 		MqttClient client = ServerConnector.connectClient();
 		Set<PublishJob> jobs = new HashSet<>();
